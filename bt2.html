@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            const a = +prompt("Nhập số nguyên a:");
+            const b = +prompt("Nhập số nguyên b:");
+
+            const arr = [];
+
+            if (a < b) {
+                for (let i = a + 1; i < b; i++) {
+                    arr.push(i);
+                }
+            } else {
+                for (let i = a - 1; i > b; i--) {
+                    arr.push(i);
+                }
+            }
+
+            console.log("Mảng chứa các số trong khoảng giữa a và b:");
+            console.log(arr);
+    </script>
+</body>
+</html>
